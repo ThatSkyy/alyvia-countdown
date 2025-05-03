@@ -107,7 +107,7 @@ const endDate = new Date("2025-05-22T00:00:00");
 
 
     function showDailyContent() {
-      const today = new Date().toISOString().split("T")[0];
+      const today = new Date().toLocaleDateString("en-CA");
       const contentDiv = document.getElementById("dailyContent");
       if (dailyContent[today]) {
         const { msg, img } = dailyContent[today];
